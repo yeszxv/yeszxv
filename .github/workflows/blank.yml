@@ -94,12 +94,12 @@ jobs:
         EOL
     - name: Get hyxw.m3u8
       run: |
-        touch ./hyxw.m3u8
+        touch ./taiwan.m3u8
         sudo cat >./hyxw.m3u8 <<EOL
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(youtube-dl -g https://www.youtube.com/channel/UCp2f7tGJGN6R9Muxipem8Nw/live)
+        $(youtube-dl -g https://m.youtube.com/watch?v=ISsV6g0SsPQ)
         EOL
     - name: Get ipanda.m3u8
       run: |
